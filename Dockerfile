@@ -27,7 +27,7 @@ RUN apt-get update && \
     #install plink2 \
     mkdir plink2 && \
     cd plink2 && \
-    curl -sSOL https://s3.amazonaws.com/plink2-assets/plink2_linux_x86_64_20240318.zip && \
+    curl -sSOL https://s3.amazonaws.com/plink2-assets/plink2_linux_x86_64_latest.zip && \
     unzip plink2_linux_x86_64_*.zip && \
     rm plink2_linux_x86_64_*.zip && \
     cd ../ && \
