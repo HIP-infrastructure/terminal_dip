@@ -28,13 +28,13 @@ RUN apt-get update && \
     mkdir plink2 && \
     cd plink2 && \
     curl -sSOL https://s3.amazonaws.com/plink2-assets/plink2_linux_x86_64_latest.zip && \
-    unzip plink2_linux_x86_64_*.zip && \
+    unzip -q plink2_linux_x86_64_*.zip && \
     rm plink2_linux_x86_64_*.zip && \
     cd ../ && \
     #install bcftools \
     mkdir bcftools && \
     curl -sSOL https://github.com/samtools/bcftools/releases/download/1.18/bcftools-1.18.tar.bz2 && \
-    tar jxvf bcftools-1.18.tar.bz2 && \
+    tar jxf bcftools-1.18.tar.bz2 && \
     rm bcftools-1.18.tar.bz2 && \
     cd bcftools-1.18 && \
     ./configure --prefix=/apps/terminal_dip/bcftools && \
